@@ -5,5 +5,25 @@
 </head>
 <body>
   <h1>Welcome to my website!</h1>
+
+  <h2>Last Code Update</h2>
+  <p>The last time the code for this website was updated through the AWS CodePipeline was:</p>
+  <p id="last-update"></p>
+
+  <script>
+    // Get the current date and time
+    var currentDate = new Date();
+
+    // Set the last update date and time
+    // Replace this with the actual date and time from your CodePipeline
+    var lastUpdateDate = new Date('2024-04-17T20:57:00Z');
+
+    // Format the date and time for display
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    var formattedDate = lastUpdateDate.toLocaleString('en-US', options);
+
+    // Display the last update date and time
+    document.getElementById('last-update').textContent = formattedDate;
+  </script>
 </body>
 </html>
